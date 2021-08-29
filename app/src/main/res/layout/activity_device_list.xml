@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".DeviceListActivity"
+    android:background="#cce5fc">
+
+    <ProgressBar
+        android:id="@+id/progress_scan_devices"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/str_paired_devices"
+        android:textColor="#4596e6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <ListView
+        android:id="@+id/list_paired_devices"
+        tools:listitem_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:divider="#00000000"
+        android:dividerHeight="10dip"
+    />
+
+    <TextView
+        android:id="@+id/list_available"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/str_available_devices"
+        android:textColor="#4596e6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <ListView
+        android:id="@+id/list_available_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20px"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:divider="#00000000"
+        android:dividerHeight="10dip"/>
+
+</LinearLayout>
