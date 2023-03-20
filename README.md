@@ -1,3 +1,3 @@
 # Output
 
-![1](./Demo/1.jpg)
+![1](/Demo/1.jpg)
